@@ -6,7 +6,7 @@ $(document).ready(function () {
         var lastName = $("input[name='last-name']").val();
         var contactNumber = $("input[name='contact-number']").val();
 
-        var newRow = $("<tr>");
+        var newRow = $("<tr class='table-row'>");
         newRow.append("<td>" + sn + "</td>");
         newRow.append("<td>" + firstName + " " + lastName + "</td>");
         newRow.append("<td>" + contactNumber + "</td>");
@@ -19,42 +19,23 @@ $(document).ready(function () {
 
 sn=1;
 
-
-// $("#search-bar").keyup(function () {
-//     // code to filter table rows
-//     var searchValue = $(this).val();
-//     $("table tbody tr").filter(function () {
-//         var name = $(this).find("td:nth-child(2)").text();
-//         return name.indexOf(searchValue) > -1;
-//     }).show();
-
-//     $("table tbody tr").filter(function () {
-//         var name = $(this).find("td:nth-child(2)").text();
-//         return name.indexOf(searchValue) == -1;
-//     }).hide();
-// });
-
-// $("#search-bar").on("input", function () {
-//     var searchValue = $(this).val().toLowerCase();
-//     $("table tbody tr").each(function () {
-//       var name = $(this).find("td:nth-child(2)").text().toLowerCase();
-//       $(this).toggle(name.indexOf(searchValue) > -1);
-//     });
-//   });
-
-
-$("#search-bar").on("keyup", function() {
-    var searchValue = $(this).val().toLowerCase();
-    $("table tbody tr").filter(function() {
-        var name = $(this).find("td:nth-child(2)").text().toLowerCase();
-        return name.indexOf(searchValue) > -1;
-    }).show();
-    $("table tbody tr").filter(function() {
-        var name = $(this).find("td:nth-child(2)").text().toLowerCase();
-        return name.indexOf(searchValue) == -1;
-    }).hide();
+$("#name-header").on("click", function () {
+    var rows = $(".table-row").get();
+    rows.sort(function(a, b) {
+        var A = $(a).find("td:nth-child(2)").text().toUpperCase();
+        var B = $(b).find("td:nth-child(2)").text().toUpperCase();
+        if(A < B) {
+            return -1;
+        }
+        if(A > B) {
+            return 1;
+        }
+        return 0;
+    });
+    $.each(rows, function(index, row) {
+        $("table").append(row);
+    });
 });
-
 
 
 $(document).on("click", ".delete-icon", function () {
