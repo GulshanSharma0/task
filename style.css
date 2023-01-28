@@ -1,0 +1,148 @@
+/* .fill{
+    height: 500px;
+    width: 500px;
+    border: 2px black;
+    align-items: center;
+    padding: 10px;
+
+} */
+
+/* #myForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+label {
+    width: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#firstName, #lastName {
+    width: 45px;
+    margin-right: 5%;
+}
+
+#contactNumber {
+    width: 50%;
+    height: 40px;
+}
+
+input[type="submit"] {
+    width: 50%;
+    height: 60px;
+    margin-top: 20px;
+} */
+
+/* Form container */
+#myForm {
+    width: 40%;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Form labels */
+label {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.name-inputs {
+    display: flex;
+}
+
+.name-inputs input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+
+/* Form input fields */
+input[type="text"], input[type="tel"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* Submit button */
+input[type="submit"] {
+    font-size: 1em;
+    width: 100%;
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Search container */
+.search-container {
+    width: 44%;
+    position: relative;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-container input[type="text"] {
+    padding-left: 40px;
+    border-radius: 25px;
+}
+
+.search-container button {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    padding: 15px; /* set the padding for the button */
+    border: none; /* remove the border */
+    background-color: transparent;
+}
+
+
+/* Search button hover effect */
+#search-button:hover {
+    cursor: pointer; /* change the background color of the search button on hover */
+}
+
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px; 
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+
+.delete-icon {
+    font-size: 18px;
+    color: red;
+}
