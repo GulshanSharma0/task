@@ -1,41 +1,3 @@
-/* .fill{
-    height: 500px;
-    width: 500px;
-    border: 2px black;
-    align-items: center;
-    padding: 10px;
-
-} */
-
-/* #myForm {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-label {
-    width: 100px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-#firstName, #lastName {
-    width: 45px;
-    margin-right: 5%;
-}
-
-#contactNumber {
-    width: 50%;
-    height: 40px;
-}
-
-input[type="submit"] {
-    width: 50%;
-    height: 60px;
-    margin-top: 20px;
-} */
-
-/* Form container */
 #myForm {
     width: 40%;
     margin: 0 auto;
@@ -45,7 +7,7 @@ input[type="submit"] {
     background-color: #f9f9f9;
 }
 
-/* Form labels */
+
 label {
     font-size: 1.2em;
     font-weight: bold;
@@ -63,7 +25,7 @@ label {
 }
 
 
-/* Form input fields */
+
 input[type="text"], input[type="tel"] {
     width: 100%;
     padding: 12px 20px;
@@ -74,7 +36,7 @@ input[type="text"], input[type="tel"] {
     outline: none;
 }
 
-/* Submit button */
+
 input[type="submit"] {
     font-size: 1em;
     width: 100%;
@@ -92,7 +54,7 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 
-/* Search container */
+
 .search-container {
     width: 44%;
     position: relative;
@@ -110,15 +72,15 @@ input[type="submit"]:hover {
     position: absolute; 
     top: 0;
     left: 0;
-    padding: 15px; /* set the padding for the button */
-    border: none; /* remove the border */
+    padding: 15px;
+    border: none;
     background-color: transparent;
 }
 
 
-/* Search button hover effect */
+
 #search-button:hover {
-    cursor: pointer; /* change the background color of the search button on hover */
+    cursor: pointer;
 }
 
 
@@ -145,4 +107,8 @@ th {
 .delete-icon {
     font-size: 18px;
     color: red;
+}
+
+a{
+    color: black;
 }
